@@ -1,0 +1,29 @@
+﻿<template>
+    <h3>Model input (crap in)</h3>
+    <form submit.trigger="submit()">
+        <div class="col-md-2 form-group">
+            <label for="Date">Dato</label>
+            <input class="form-control" id="Date" type="text" placeholder="Dato" value.bind="date" />
+        </div>
+        <div class="col-md-2 form-group">
+            <label for="Precipitation">Nedb&oslash;r</label>
+            <input class="form-control" id="Precipitation" type="text" placeholder="Nedb&oslash;r" value.bind="precipitation" />
+        </div>
+        <div class="col-md-2 form-group">
+            <label for="Temperature">Temperatur</label>
+            <input class="form-control" id="Temperature" type="text" placeholder="Temperatur" value.bind="temperature" />
+        </div>
+        <div class="col-md-2 form-group">
+            <label for="QObserved">Q Observed</label>
+            <input class="form-control" id="QObserved" type="text" placeholder="Q observed" value.bind="q_observed" />
+        </div>
+        <div class="col-md-2 form-group">
+            <label for="QSimulated">Q Simulated</label>
+            <input class="form-control" id="QSimulated" type="text" placeholder="Q simulated" value.bind="q_simulated" />
+        </div>
+        <div class="col-md-2 form-group">
+            <label for="QSimulated">Legg til</label><br />
+            <input class="btn btn-primary btn-block" type="submit" value="Ok" />
+        </div>
+    </form>
+</template>
